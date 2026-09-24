@@ -5,7 +5,7 @@ id: anywhy_flake
 name: Anywhy Flake
 type: shield
 url: https://github.com/anywhy-io/flake
-requires: [xiao_ble]
+requires: [seeeduino_xiao_ble]
 features:
   - keys
 siblings:
