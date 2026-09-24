@@ -44,7 +44,7 @@
 &kp TAB  &kp Q     &kp W     &kp F      &kp P     &kp B         &kp J     &kp L     &kp U      &kp Y     &kp Z  &kp BSPC
 &kp CAPSLOCK    &kp A     &kp R     &kp S      &kp T     &kp G         &kp M     &kp N     &kp E      &kp I     &kp O     &kp ENTER
 &kp EQUAL   &mt LGUI COMMA   &mt LALT X     &mt LCTRL C     &mt LSHIFT D     &kp V         &kp K     &mt LSHIFT H     &mt LCTRL SEMI  &mt LALT DOT   &mt LGUI FSLH  &kp APOS
-           &kp LBKT  &kp LEFT  &kp RIGHT  &kp SPACE &kp BSPC      &kp DEL   &kp ENTER &kp DOWN   &kp UP &kp RBKT
+           &mt LGUI LBKT  &kp LEFT  &kp RIGHT  &kp SPACE &kp CAPSLOCK      &kp LC(BSPC)   &kp ENTER &kp DOWN   &kp UP &mt LGUI RBKT
             >;
         };
     };
