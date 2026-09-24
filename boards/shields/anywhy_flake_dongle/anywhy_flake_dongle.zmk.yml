@@ -1,0 +1,8 @@
+file_format: "1"
+id: anywhy_flake_dongle
+name: Anywhy Flake Dongle
+type: shield
+url: https://github.com/anywhy-io/flake
+requires: [xiao_ble]
+features:
+  - keys

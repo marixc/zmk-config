@@ -1,0 +1,16 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+#include "../anywhy_flake/anywhy_flake.dtsi"
+
+/ {
+    chosen {
+        zmk,kscan = &mock_kscan;
+        zmk,physical-layout = &large_layout;
+    };
+
+    mock_kscan: mock_kscan_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+};
