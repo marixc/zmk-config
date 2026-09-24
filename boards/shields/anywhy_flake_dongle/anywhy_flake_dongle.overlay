@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "../anywhy_flake/anywhy_flake.dtsi"
+#include "../anywhy_flake/anywhy_flake_layouts.dtsi"
 
 / {
     chosen {
