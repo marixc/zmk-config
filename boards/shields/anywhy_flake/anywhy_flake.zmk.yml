@@ -1,0 +1,13 @@
+# Adapted from anywhy-io/flake-firmware (MIT License)
+# https://github.com/anywhy-io/flake-firmware
+file_format: "1"
+id: anywhy_flake
+name: Anywhy Flake
+type: shield
+url: https://github.com/anywhy-io/flake
+requires: [xiao_ble//zmk]
+features:
+  - keys
+siblings:
+  - anywhy_flake_left
+  - anywhy_flake_right

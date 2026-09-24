@@ -1,0 +1,19 @@
+# Adapted from anywhy-io/flake-firmware (MIT License)
+# https://github.com/anywhy-io/flake-firmware
+
+if SHIELD_ANYWHY_FLAKE_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Anywhy Flake"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_ANYWHY_FLAKE_LEFT || SHIELD_ANYWHY_FLAKE_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
