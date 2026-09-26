@@ -25,7 +25,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define BASE 0
-#define FN   1
+#define SYM   1
 
 / {
     keymap {
@@ -43,20 +43,20 @@
              * Thumb (10):     LGUI LALT LCTRL SPACE BSPC   DEL RSHFT RALT RCTRL RGUI
              */
             bindings = <
-&lt FN TILDE    &kp N1    &kp N2    &kp N3     &kp N4    &kp N5        &kp N6    &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TILDE    &kp N1    &kp N2    &kp N3     &kp N4    &kp N5        &kp N6    &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB  &kp Q     &kp W     &kp F      &kp P     &kp B         &kp J     &kp L     &kp U      &kp Y     &kp Z  &kp BSPC
 &kp CAPSLOCK    &kp A     &kp R     &kp S      &kp T     &kp G         &kp M     &kp N     &kp E      &kp I     &kp O     &kp ENTER
 &kp EQUAL   &mt LGUI COMMA   &mt LALT V     &mt LCTRL C     &mt LSHIFT D     &kp X         &kp K     &mt LSHIFT H     &mt LCTRL SEMI  &mt LALT DOT   &mt LGUI FSLH  &kp APOS
-           &mt LGUI LBKT  &kp LEFT  &kp RIGHT  &kp SPACE &kp CAPSLOCK      &kp LC(BSPC)   &kp ENTER &kp DOWN   &kp UP &mt LGUI RBKT
+           &mt LGUI LBKT  &kp LEFT  &kp RIGHT  &kp SPACE &kp CAPSLOCK      &kp LC(BSPC)   &lt SYM ENTER &kp DOWN   &kp UP &mt LGUI RBKT
             >;
         };
-                fn {
-            display-name = "FN";
+                sym {
+            display-name = "SYM";
 
             bindings = <
 &trans &trans &trans &trans &trans &bootloader          &trans &trans &trans &trans &trans &trans
 &trans       &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
-&trans       &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
+&trans       &trans &kp BSLH &kp GRAVE &kp PIPE &trans        &trans &trans &trans &trans &trans &trans
 &trans       &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
              &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
             >;
