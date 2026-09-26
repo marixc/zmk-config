@@ -47,16 +47,16 @@
 &kp TAB  &kp Q     &kp W     &kp F      &kp P     &kp B         &kp J     &kp L     &kp U      &kp Y     &kp Z  &kp BSPC
 &kp CAPSLOCK    &kp A     &kp R     &kp S      &kp T     &kp G         &kp M     &kp N     &kp E      &kp I     &kp O     &kp ENTER
 &kp EQUAL   &mt LGUI COMMA   &mt LALT V     &mt LCTRL C     &mt LSHIFT D     &kp X         &kp K     &mt LSHIFT H     &mt LCTRL SEMI  &mt LALT DOT   &mt LGUI FSLH  &kp APOS
-           &mt LGUI LBKT  &kp LEFT  &kp RIGHT  &kp SPACE &kp CAPSLOCK      &kp LC(BSPC)   &lt SYM ENTER &kp DOWN   &kp UP &mt LGUI RBKT
+           &mt LGUI LBKT  &kp LEFT  &kp RIGHT  &kp SPACE &lt SYM CAPSLOCK      &kp LC(BSPC)   &lt SYM ENTER &kp DOWN   &kp UP &mt LGUI RBKT
             >;
         };
                 sym {
             display-name = "SYM";
 
             bindings = <
-&trans &trans &trans &trans &trans &bootloader          &trans &trans &trans &trans &trans &trans
-&trans       &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
-&trans       &trans &kp BSLH &kp GRAVE &kp PIPE &trans        &trans &trans &trans &trans &trans &trans
+&kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
+&trans       &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &kp DEL
+&trans       &trans &kp BSLH &kp GRAVE &kp PIPE &trans        &trans &kp C_VOL_DN &kp C_VOL_UP &trans &trans &trans
 &trans       &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
              &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
             >;
