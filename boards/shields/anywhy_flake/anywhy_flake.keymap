@@ -28,6 +28,26 @@
 #define SYM   1
 
 / {
+    behaviors {
+        /*
+         * Custom mod-tap: "tap-preferred" flavor with 200 ms tapping term.
+         *
+         * Equivalent to Vial's "Ignore Mod Tap Interrupt" + 200 ms tapping term:
+         * - A key pressed while this key is held does NOT immediately trigger the
+         *   hold (modifier) action — the mod only fires if the key is still held
+         *   after the full tapping-term-ms window expires.
+         * - This prevents fast typists from accidentally firing Ctrl/Shift/Alt/GUI
+         *   when rolling quickly through the bottom-row mod-tap keys.
+         */
+        mt: mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
